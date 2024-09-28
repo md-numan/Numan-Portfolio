@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #faf6fee2;
+}
+
+
+.navbar ul li a{
+    color: black;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.hero__section{
+    display: flex;
+    height: 25px;
+    justify-content: center;
+}
+.title_bold{
+   width: 30px;
+   
+   font-size: 3rem;
+   color: rgb(7, 7, 7);
+   padding-top: 20px;
+   font-weight: 700;
+   text-shadow: 20px rgb(248, 244, 244);
+
+}
+
+.title{
+    font-size: 3rem;
+    color: rgb(54, 50, 50);
+    
+
+}
+.sub__title{
+    font-size: 1.5rem;
+    font-family: georgia;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding-block: 15px;
+    
+   
+}
+.my__btn{
+    padding: 10px 30px;
+    
+    background-color: #9406e0d4;
+    color: white;
+    border: none;
+
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.my__btn:hover{
+    background-color: hwb(237 7% 5%);
+    text-align: center;
+    color: rgb(250, 249, 249);
+}
+
+.social{
+    padding-top: 50%;
+}
+
+.social ul li a{
+    
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(238, 153, 239);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+.img-fluid{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
