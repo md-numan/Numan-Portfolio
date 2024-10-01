@@ -10,12 +10,13 @@ body{
 
 
 .navbar ul li a{
-    color: black;
+    color: white !important;
     font-size: 1.2rem;
     padding: 10px;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
+
 
 .hero__section{
     display: flex;
@@ -24,7 +25,6 @@ body{
 }
 .title_bold{
    width: 30px;
-   
    font-size: 3rem;
    color: rgb(7, 7, 7);
    padding-top: 20px;
@@ -37,8 +37,8 @@ body{
     font-size: 3rem;
     color: rgb(54, 50, 50);
     
-
 }
+
 .sub__title{
     font-size: 1.5rem;
     font-family: georgia;
@@ -52,9 +52,9 @@ body{
     padding: 10px 30px;
     
     background-color: #9406e0d4;
-    color: white;
+    color: rgb(37, 34, 34);
     border: none;
-
+    font-weight: 700;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
@@ -66,25 +66,44 @@ body{
 }
 
 .social{
-    padding-top: 50%;
+    padding-top:50px;
+    
 }
 
-.social ul li a{
-    
+.social a{
     position: relative;
     width: 40px;
     height: 40px;
-    border: 2px solid rgb(238, 153, 239);
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
+    border: 2px solid rgb(238, 153, 239);
+    margin: 10px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    overflow: hidden;
+    transition:  .6s;
 }
 
-
-
-
+.social a:hover{
+   color:white ;
+}
+.social a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(128, 7, 158, 0.929);
+    z-index: -1;
+    transition:  .6s;
+    
+}
+.social a:hover::before{
+    width: 100%;
+}
 
 .img-fluid{
     width: 100%;
@@ -92,5 +111,8 @@ body{
     object-fit: cover;
     margin-top: 20px;
     margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.521);
+    cursor: pointer;
 }
 
