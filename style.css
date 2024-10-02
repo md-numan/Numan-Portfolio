@@ -9,7 +9,7 @@ body{
     background-color: #faf6fee2;
 }
 
-
+/* Navbar section Start */
 .navbar ul li a{
     color: white !important;
     font-size: 1.2rem;
@@ -147,18 +147,61 @@ span{
 .about-img{
     
     width: 25rem;
-    height: 25rem;
+     height: 25rem; 
+    border-radius: 50%;
     margin: 0 auto;
     padding: 1rem;
     cursor: pointer;
+  
 }
+
+ /* @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.about-img::after, .about-img::before{
+   
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient(from var(--angle), rgb(31, 65, 232) 0%, rgb(244, 5, 53) 100%);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 5s spin linear infinite;
+}
+
+.about-img::before{
+    filter: blur(1.5rem);
+    opacity: .5;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+
+    to{
+        --angle: 360deg;
+    }
+} */
 
 .about-img img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: .3rem solid rgb(58, 132, 241);
-    padding: .1rem;
+    padding: .0rem;
+    border: 2px solid blue;
+    
+}
+.about-img img:hover{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.521);
 }
 
 
@@ -174,18 +217,102 @@ span{
     margin-bottom: 1rem;
     font-size: 3rem;
 }
+.about-content:hover h3{
+    color: blue;
+}
+
 .about-content p{
     font-size: 1.6rem;
     margin:2rem 0 3rem;
+    text-align: justify;
+    padding: 30px;
+    font-weight: 600;
 }
 /* about section end */
 
-/* Education section  */
+/* Education section start */
+.services{
+    min-height: auto;
+    padding-bottom: 7rem;
+   
+}
+.services h2{
+         margin-bottom: 0rem;
+}
+
+.services .services-container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       gap: 2rem;
+       padding: 5rem;
+       cursor:grab ;
+}
+.services-container p{
+    text-align: justify;
+  
+}
+
+.services-container .services-box{
+       flex: 1 1 10rem;
+       background: white;
+       padding: 2rem 2rem 2rem;
+       border-radius: 2rem;
+       box-shadow: 0 .1rem .3rem black;
+       text-align: center;
+       border-top: .5rem solid blue;
+       border-bottom: .5rem solid blue;
+       transition: .5s ease;
+}
+.services-container .services-box:hover {
+   box-shadow: 0 .1rem .3rem black;
+   transform: scale(1.03);
+}
+
+.services-box i {
+    font-size: 7rem;
+    color: blue;
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+    transition: .6s ease;
+}
+.services-box:hover h3 {
+    color: blue;
+}
+
+.services-box p {
+   margin-top: 1rem 0 3rem;
+    font-size: 1.6rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.0rem 2.6rem;
+    background: blue;
+    border-radius: .6rem;
+    box-shadow: 0 0 05px rgba(0, 0, 0,220);
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: .1rem;
+    transition: .6s ease;
+    
+    
+}
+.btn:hover{
+    background:transparent;
+    color: blue;
+
+}
 
 
+/* Education section end */
 
 
-
+/* portfolio section design  */
 
 
 
